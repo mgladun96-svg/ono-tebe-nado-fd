@@ -1,1 +1,345 @@
-/* место для вашего кода */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  height: 293px;
+  padding: 92px 50px 96px;
+  text-underline-position: unset;
+}
+
+a {
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+}
+
+.header__menu {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 32px;
+  justify-self: start;
+  list-style: circle;
+}
+
+.header__menu li:first-child {
+  list-style: none;
+}
+
+.logo {
+  justify-self: center;
+  width: 137px;
+  height: 105px;
+}
+
+.address {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  width: 240px;
+  height: 98px;
+}
+
+.last-address {
+  text-decoration-line: none;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  min-height: 757px;
+  z-index: -2;
+  background-image: url('../images/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+} 
+
+.title {
+  display: grid;
+  grid-template-rows: (3, 115px);
+  gap: 17px 0;
+  z-index: 1;
+  margin: 0 50px 207px;
+  padding-top: 165px;
+  color: white;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  font-style: bold;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  margin-bottom: 0;
+}
+
+.aligned-text_left {
+  justify-self: start;
+}
+
+.aligned-text_center {
+  justify-self: center;
+}
+
+.aligned-text_right {
+  justify-self: end;
+}
+
+.last-letter {
+  letter-spacing: 0;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 1000px;
+  height: 51px;
+  margin: 106px 50px 50px 50px;
+}
+
+.subline {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+}
+
+.space {
+letter-spacing: 20px;
+}
+
+.space-two {
+letter-spacing: 18px;
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.0);
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: white;
+  border-width: 1px;
+  border-color: white;
+}
+
+.lots {
+width: 1052px;
+margin: 180px 24px 120px;
+}
+
+.lots-heading {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: bold;
+  margin-left: 40px;
+  margin-bottom: 27px;
+}
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  list-style: none;
+}
+
+.card {
+  width: 334px;
+  min-height: 596px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: -2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.lot-film {
+  position: relative;
+  inset: 0;
+  z-index: -2;
+  background-image: url('../images/card-lot-01.jpg');
+}
+
+.lot-book {
+  position: relative;
+  inset: 0;
+  z-index: -2;
+  background-image: url('../images/card-lot-02.jpg');
+}
+
+.lot-picture {
+  position: relative;
+  inset: 0;
+  z-index: -2;
+  background-image: url('../images/card-lot-03.jpg');
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+} 
+
+.card__title {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  font-style: bold; 
+  text-transform: uppercase;
+  line-height: 120%;
+  color: white;
+  margin: 0 40px 30px;
+  padding-top: 48px;
+}
+
+.card__text {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal; 
+  line-height: 120%;
+  color: white;
+  margin: 0 40px;
+  padding-bottom: 48px;
+}
+
+.lots__look-more-link {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 40px;
+}
+
+.about {
+width: 1052px;
+margin: 155px 24px 180px;
+display: grid;
+grid-template-columns: 334px auto;
+grid-template-rows: 240px auto;
+grid-template-areas:
+"logo-column about-title"
+". description-block";
+align-items: center;
+row-gap: 8px;
+column-gap: 25px;
+}
+
+.logo-column {
+  grid-area: logo-column;
+  justify-self: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 180px;
+  background-image: url(../images/logo-white.svg);
+  background-size: 148px 114px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+.about-title {
+  grid-area: about-title;
+  justify-self: start;
+  align-items: center;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: bold; 
+  text-transform: uppercase;
+}
+
+.description-block {
+  grid-area: description-block;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal; 
+  line-height: 24px;
+}
+
+.footer {
+  width: 1100px;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 180px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contacts {
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  width: 242px;
+  height: 98px;
+}
+
+.menu {
+  justify-self: center;
+  justify-items: center;
+  list-style: none;
+  width: 164px;
+}
+
+.socials {
+  justify-self: end;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 48px;
+  list-style: none;
+}
+
+.youtube {
+background-image: url(../images/yt.svg);
+width: 48px;
+background-repeat: no-repeat;
+}
+
+.vk {
+background-image: url(../images/vk.svg);
+width: 48px;
+background-repeat: no-repeat;
+}
+
+.pinterest {
+background-image: url(../images/pinterest.svg);
+width: 48px;
+background-repeat: no-repeat;
+}
