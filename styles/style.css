@@ -73,7 +73,6 @@ a {
 
 .title {
   display: grid;
-  grid-template-rows: (3, 115px);
   gap: 17px 0;
   z-index: 1;
   margin: 0 50px 207px;
@@ -257,7 +256,6 @@ a {
   font-family: 'Raleway', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 40px;
-  font-style: bold;
   text-transform: uppercase;
   padding-top: 8px;
 }
@@ -286,6 +284,8 @@ a {
 
 .contacts {
   justify-self: start;
+  max-width: 242px;
+  width: 100%;
 }
 
 .menu {
